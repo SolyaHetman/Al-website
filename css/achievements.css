@@ -1,0 +1,46 @@
+.banner {
+    height: 400px;
+    width: 100%;
+    background-color: #fb8c00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.active-now {
+    background-color: #fb8c00;
+}
+
+#cssmenu .active-now a {
+    color: #fff;
+}
+
+.banner h1 {
+    font-size: 3.5rem;
+}
+
+.table-section {
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    box-shadow: 0 0 5px #333;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
