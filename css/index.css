@@ -156,6 +156,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 105px;
 }
 
 .about-information img {
@@ -210,9 +211,87 @@ nav {
 }
 
 
+/* Photo effects*/
+
+.image {
+    width: 500px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.image a {
+    opacity: 0;
+    transition: .2s;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    line-height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    /* border: 3px solid white; */
+    /* padding: 10px; */
+    font-size: 1.4rem;
+}
+
+.image:after,
+.image:before {
+    opacity: 0;
+    transition: .2s;
+    content: "";
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(90px) saturate(4);
+    filter: blur(90px) saturate(4);
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .image:after,
+    .image:before {
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.image:hover a,
+.image:hover:after,
+.image:hover:before {
+    opacity: 1;
+}
+
+.hover .image a,
+.hover .image:after,
+.hover .image:before {
+    opacity: 1;
+}
+
+
+/*End phjto effects*/
+
+
 /* Start Contact Page */
 
 .container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 600px;
     margin: 0;
@@ -455,3 +534,7 @@ footer h3 b {
 
 
 /* end footer */
+
+@media screen and (min-width: 993px) {
+    footer {}
+}

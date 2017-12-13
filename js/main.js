@@ -212,7 +212,7 @@ Letter.prototype.render = function(char) {
 
 };
 
-var word = ["CSS50", "PROMETHEUS"];
+var word = ["CS50", "PROMETHEUS", "Desing-thinking"];
 var nextWord = 1;
 
 var letters = new Letters();
