@@ -382,7 +382,7 @@ input {
     height: 25px;
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 300px;
+    width: 400px;
     border: none;
     outline: none;
     border-bottom: 1px solid black;
@@ -477,6 +477,8 @@ a.send-btn {
     float: right;
     color: black;
     transition: 0.2s ease;
+    font-weight: 600;
+    font-size: 1.6rem;
 }
 
 a.send-btn:hover {
@@ -485,10 +487,19 @@ a.send-btn:hover {
 }
 
 #map {
-    height: 300px;
-    width: 65%;
-    margin-top: 135px;
-    margin-left: 179px;
+    height: 400px;
+    width: 100%;
+}
+
+#contact {
+    min-height: 500px;
+    background-color: #fafafa;
+}
+
+.panel-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 8%;
 }
 
 
