@@ -1,8 +1,56 @@
+.header {
+    background-image: url('../img/project-head.jpeg');
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    margin-left: 250px;
+}
+
+.header .container {
+    height: 350px !important;
+}
+
+.header::before {
+    background-color: #fafafa;
+    content: '';
+    display: block;
+    height: 350px;
+    position: absolute;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.header .time-group {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    color: #151623;
+}
+
+.header .time-group .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .time-group h1 {
+    font-size: 5rem;
+    margin-bottom: 0;
+}
+
+.header .time-group p {
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
 .container-gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 75px;
     margin-left: 250px;
     padding: 0px 70px 0px 15px;
 }
@@ -21,7 +69,8 @@
 .card {
     transition: all .2s ease-in-out;
     margin-top: 20px;
-    border: 1px #fb8c00 solid
+    border: 1px #fb8c00 solid;
+    background-color: #fff;
 }
 
 .card:hover {
@@ -30,6 +79,7 @@
 }
 
 .card .description h1 {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     color: #fb8c00;
     text-transform: uppecase;
@@ -38,11 +88,18 @@
 }
 
 .card .description {
+    font-family: "Roboto", sans-serif;
     padding: 0px 15px 0px 15px;
+    cursor: pointer;
 }
 
 .card .description p {
     text-align: justify;
+}
+
+.card .description p:nth-child(1) {
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .button {
