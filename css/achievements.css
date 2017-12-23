@@ -1,5 +1,5 @@
 .banner {
-    height: 400px;
+    height: 350px;
     width: 100%;
     background-color: #fb8c00;
     display: flex;
@@ -23,25 +23,80 @@
 .table-section {
     min-height: 600px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial;
     border-collapse: collapse;
-    width: 90%;
-    box-shadow: 0 0 5px #333;
-    margin: 70px 0px 70px 0px !important;
+    box-shadow: 0 0 5px #fb8c00;
+    margin: 70px 0px 20px 0px !important;
+}
+
+table .head {
+    background-color: #fb8c00;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-align: start;
+}
+
+table .head th {
+    border: unset;
+    font-weight: 900;
+}
+
+table .head a {
+    text-decoration: none;
+}
+
+.group-name th {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #3b3b3b;
+}
+
+table tr:nth-child(n+3) {
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #3b3b3b;
+}
+
+table tr:nth-child(n+3) td:nth-child(n+4) {
+    text-align: center;
+}
+
+
+/* color: #3b3b3b;
+    font-size: 1.1rem;
+    text-align: start;
+    line-height: 20px;
+    font-weight: 400; */
+
+table i:hover {
+    color: #fb8c00;
+    font-size: 18px;
 }
 
 td,
 th {
-    border: 1px solid #dddddd;
-    text-align: center;
+    border: 1px solid #f1f1f1;
+    text-align: start;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
 }
