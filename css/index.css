@@ -583,6 +583,8 @@ footer h3 b {
 
 /* end footer */
 
-@media screen and (min-width: 993px) {
-    footer {}
+@media only screen and (max-width: 992px) {
+    footer {
+        padding: 0px !important;
+    }
 }
