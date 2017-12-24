@@ -124,6 +124,16 @@
     color: white;
 }
 
+@media screen and (max-width: 600px) {
+    .banner {
+        margin-top: 84px;
+        height: 200px;
+    }
+    .banner h1 {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (min-width: 300px) and (max-width: 480px) {
     .card .description h1 {
         font-size: 1.2rem !important;
@@ -139,6 +149,9 @@
     }
     .header .time-group p {
         font-size: 1rem
+    }
+    .container-gallery {
+        margin-top: 10px;
     }
 }
 
