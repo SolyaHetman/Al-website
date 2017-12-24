@@ -231,6 +231,7 @@ img.logo {
 .blocks-group {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .left-side-block,
@@ -307,7 +308,7 @@ img.logo {
 }
 
 .image-gallery .gallery-item img {
-    max-width: 450px;
+    max-width: 330px;
     height: auto;
     transition: all .2s ease-in-out;
 }
@@ -583,8 +584,42 @@ footer h3 b {
 
 /* end footer */
 
+@media only screen and (max-width: 480px) {
+    #contact {
+        min-height: unset;
+    }
+    #contact input {
+        width: 300px;
+    }
+    #contact form h1 {
+        font-size: 2rem;
+    }
+    .panel-content {
+        padding-bottom: 8%;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     footer {
         padding: 0px !important;
+    }
+    .some-text-block {
+        margin-left: 0px;
+        min-height: 600px;
+        height: unset;
+    }
+    .some-text-block .container {
+        height: unset;
+    }
+    .image-gallery {
+        margin-left: 0px;
+        min-height: 600px;
+        margin-top: 0px;
+    }
+    #contact {
+        margin-left: 0px;
+    }
+    .image-gallery .container {
+        height: unset;
     }
 }

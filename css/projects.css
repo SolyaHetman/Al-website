@@ -124,16 +124,6 @@
     color: white;
 }
 
-@media screen and (max-width: 600px) {
-    .banner {
-        margin-top: 84px !important;
-        height: 200px !important;
-    }
-    .banner h1 {
-        font-size: 2rem !important;
-    }
-}
-
 @media screen and (min-width: 300px) and (max-width: 480px) {
     .card .description h1 {
         font-size: 1.2rem !important;
