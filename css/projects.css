@@ -23,6 +23,7 @@
 .header .time-group {
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     z-index: 2;
@@ -123,8 +124,35 @@
     color: white;
 }
 
-.under {
-    height: 500px;
+@media screen and (min-width: 300px) and (max-width: 480px) {
+    .card .description h1 {
+        font-size: 1.2rem !important;
+    }
+    .card .description p:nth-child(1) {
+        font-size: 1rem;
+    }
+    .card .description p {
+        font-size: 0.85rem;
+    }
+    .header .time-group h1 {
+        font-size: 2.8rem;
+    }
+    .header .time-group p {
+        font-size: 1rem
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        margin-left: 0px;
+        margin-top: 84px;
+    }
+    .card .description h1 {
+        font-size: 1.8rem;
+    }
+    .container-gallery {
+        padding-right: 15px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
