@@ -99,4 +99,11 @@ tr:nth-child(even) {
         overflow-x: auto;
         white-space: nowrap;
     }
+    .banner {
+        margin-top: 84px !important;
+        height: 200px !important;
+    }
+    .banner h1 {
+        font-size: 2rem !important;
+    }
 }
