@@ -73,6 +73,7 @@ img.logo {
 
 #cssmenu>ul>li>a:hover {
     text-decoration: none;
+    color: #fb8c00;
 }
 
 #cssmenu>ul>li.active {
@@ -231,7 +232,6 @@ img.logo {
 .blocks-group {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .left-side-block,
@@ -545,6 +545,10 @@ a.send-btn:hover {
 
 /* start footer */
 
+#achievements-page footer {
+    padding-left: 0;
+}
+
 footer {
     padding-left: 200px;
     width: 100%;
@@ -596,6 +600,9 @@ footer h3 b {
     }
     .panel-content {
         padding-bottom: 8%;
+    }
+    .blocks-group {
+        flex-wrap: wrap;
     }
 }
 

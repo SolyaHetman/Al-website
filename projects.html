@@ -67,7 +67,30 @@
             </div>
         </div>
     </div>
-
+    <style>
+        .card .button {
+            position: absolute;
+            left: 0;
+            top: 80px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity .35s ease;
+            margin-left: 100px;
+        }
+        
+        .card .button a {
+            width: 200px;
+            padding: 12px 48px;
+            text-align: center;
+            color: #fb8c00;
+            border: solid 2px #fb8c00;
+            z-index: 1;
+        }
+        
+        .team-photo:hover .button {
+            opacity: 1;
+        }
+    </style>
     <!-- START A CONTENT -->
     <div class="container-gallery">
 
@@ -75,6 +98,7 @@
         <div class="card">
             <div class="team-photo">
                 <img src="img/bot.jpg" alt="team photo">
+                <div class="button"><a href="#"> BUTTON </a></div>
             </div>
             <div class="description">
                 <h1>Giraffe bot 2.0</h1>
