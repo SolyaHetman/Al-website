@@ -5,6 +5,7 @@
     <title>Al-Students | Projects</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='shortcut icon' type='image/x-icon' href="img/logo_fug_icon.ico" />
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="css/projects.css">
@@ -82,30 +83,41 @@
             width: 200px;
             padding: 12px 48px;
             text-align: center;
-            color: #fb8c00;
+            color: white;
             border: solid 2px #fb8c00;
+            background-color: #fb8c00;
             z-index: 1;
+            text-decoration: none;
         }
         
         .team-photo:hover .button {
             opacity: 1;
+        }
+        
+        .team-photo img:hover:after {
+            content: "";
+            background: rgba(45, 88, 35, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
     </style>
     <!-- START A CONTENT -->
     <div class="container-gallery">
 
         <!-- START CARD -->
-        <div class="card">
+        <div class="card" id="team1">
             <div class="team-photo">
                 <img src="img/bot.jpg" alt="team photo">
-                <div class="button"><a href="#"> BUTTON </a></div>
+                <div class="button"><a href="http://prezi.com/kna2nfeax5q8/?utm_campaign=share&utm_medium=copy&rc=ex0share" target="_blank"> Visit </a></div>
             </div>
             <div class="description">
                 <h1>Giraffe bot 2.0</h1>
                 <div class="text">
                     <p><b>Team:</b> Taras Shmilyk,Olena Pylypiv,Pavlo Faryna,Roman Pidkostelniy</p>
-                    <p class='truncated'>The bot is able to send us our studying schedule (you can ask whether you have lessons on monday, tuesday, etc.) the bot now can learn - if you want to teach him some new phrases, just use a special command and he'll remember this
-                        (in the near future we will make this learning intelligent: the bot won't accept rude words and filter expressions)</p>
+                    <p class='truncated'>ChatBot Giraffe - your virtual companion, which is able to converse with you..</p>
                 </div>
             </div>
         </div>
@@ -127,47 +139,50 @@
         <!-- END CARD -->
 
         <!-- START CARD -->
-        <div class="card">
+        <div class="card" id="team1">
             <div class="team-photo">
-                <img src="img/game.jpg" alt="team photo">
+                <img src="img/plant.jpg" alt="team photo">
+                <div class="button"><a href="https://the-last-plant-1-0.jimdo.com/" target="_blank"> Visit </a></div>
             </div>
             <div class="description">
-                <h1>Game "Restoration"</h1>
+                <h1>The Last Plant AR</h1>
                 <div class="text">
-                    <p><b>Team:</b></p>
-                    <p class='truncated'>This is a post-apocalyptic game about global contamination of the planet. We want to show what can happen if humanity does not start to look after the environment and what horrible consequences it will bring in the future.</p>
-                </div>
-            </div>
-        </div>
-        <!-- END CARD -->
-
-        <!-- START CARD -->
-        <div class="card">
-            <div class="team-photo">
-                <img src="img/game.jpg" alt="team photo">
-            </div>
-            <div class="description">
-                <h1>Game "Restoration"</h1>
-                <div class="text">
-                    <p><b>Team:</b> Andriy Pytel,Kris Zgaschak,Marian Sydor,Vitaliy Savchyn,Serhiy Shchehelskiy,Iryna Didoshak.
+                    <p><b>Team:</b> Bogdan Trush,Sviatoslav Nahirnyi,Olesia Slavchanyk,Nataliia Nimylovych</b>
                     </p>
-                    <p class='truncated'>This is a post-apocalyptic game about global contamination of the planet. We want to show what can happen if humanity does not start to look after the environment and what horrible consequences it will bring in the future.</p>
+                    <p class='truncated'>We create a project with using augmented reality, which is called "The Last Plant AR".We work in Unity,using Vuforia plugins and C# language.</p>
                 </div>
             </div>
         </div>
         <!-- END CARD -->
 
         <!-- START CARD -->
-        <div class="card">
+        <div class="card" id="team2">
             <div class="team-photo">
-                <img src="img/4.jpg" alt="team photo">
+                <img src="img/restoration.png" alt="team photo">
+                <div class="button"><a href="http://restoration.zzz.com.ua/RestorationWeb/index.html" target="_blank"> Visit </a></div>
             </div>
             <div class="description">
-                <h1>Game "Painy Stairs"</h1>
+                <h1>"Restoration" 2.5D</h1>
+                <div class="text">
+                    <p><b>Team:</b> Andriy Pytel,Kris Zgaschak,Marian Sydor,Vitaliy Savchyn,Serhiy Shchehelskiy.
+                    </p>
+                    <p class='truncated'>“Restoration” 2.5 D platformer game with its own storyline which will make us think about our future. The idea of this game is to attract people's attention to the effects of human activity. </p>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+
+        <!-- START CARD -->
+        <div class="card" id="team2">
+            <div class="team-photo">
+                <img src="img/igory.jpg" alt="team photo">
+                <div class="button"><a href="https://www.youtube.com/watch?v=pEKDwmaKbJ0&feature=youtu.be" target="_blank"> Visit </a></div>
+            </div>
+            <div class="description">
+                <h1>"Painy Stairs"</h1>
                 <div class="text">
                     <p><b>Team:</b> Oleh Volchkov,Taras Hirnak,Ivan Sharko,Pavlo Yuskiv</p>
-                    <p class='truncated'>We are making a video game for android in the Unity engine. We are using C# language for scripting. Idea of the game is very simple. Player controls character, which could only jump upstairs or downstairs. While jumping up, stairs
-                        are being generated, but in the same time stairs below the character are falling down. Player should avoid falling obstacles by dodging them. The game will be over, if the character collides with an obstacle or fall down.</p>
+                    <p class='truncated'>We present you the 0.05 alpha version of our android video game Painy Stairs.So what's the sence of this game? Player controls the duck (in the future we're planning to add more characters) </p>
                 </div>
             </div>
         </div>
@@ -175,34 +190,32 @@
 
 
         <!-- START CARD -->
-        <div class="card">
+        <div class="card" id="team2">
             <div class="team-photo">
-                <img src="img/5.jpg" alt="team photo">
+                <img src="img/Brainstorm1.jpg" alt="team photo">
+                <div class="button"><a href="http://bstorm.xyz/" target="_blank"> Visit </a></div>
             </div>
             <div class="description">
-                <h1>Team Name</h1>
+                <h1>BrainStorm</h1>
                 <div class="text">
-                    <p><b>Team:</b> Inesa Hermaniuk and Nazar Mamchur</p>
-                    <p class='truncated'>We are working on Android app, which helps to find interesting events in your city not far from you exactly on a map. User can join the event, having seen its venue, invite friends, see other members and ratings among users. In addition,
-                        you can create your own events and invite people. You may send invitations to your friends and wait for their acceptance or refusal or may make the event available for everyone.</p>
+                    <p><b>Team:</b>Glinka Rostislav,Darmorray Sviatoslav,Humenchuk Bohdan</p>
+                    <p class='truncated'> Our team develops a computer game which is made on the Unreal Engine 4. The main aim of our game is to walk through lots of rooms with warious logical pazzles and get out of the building. </p>
                 </div>
             </div>
         </div>
         <!-- END CARD -->
 
 
-
         <!-- START CARD -->
-        <div class="card">
+        <div class="card" id="team3">
             <div class="team-photo">
-                <img src="img/5.jpg" alt="team photo">
+                <img src="img/tracefull1.jpg" alt="team photo">
             </div>
             <div class="description">
                 <h1>Tracefull</h1>
                 <div class="text">
                     <p><b>Team:</b> Inesa Hermaniuk and Nazar Mamchur</p>
-                    <p class='truncated'>We are working on Android app, which helps to find interesting events in your city not far from you exactly on a map. User can join the event, having seen its venue, invite friends, see other members and ratings among users. In addition,
-                        you can create your own events and invite people. You may send invitations to your friends and wait for their acceptance or refusal or may make the event available for everyone.</p>
+                    <p class='truncated'>We are working on Android app, which helps to find interesting events in your city not far from you exactly on a map. User can join the event, having seen its venue, invite friends, </p>
                 </div>
             </div>
         </div>
@@ -210,9 +223,9 @@
 
 
         <!-- START CARD -->
-        <div class="card">
+        <div class="card" id="team3">
             <div class="team-photo">
-                <img src="img/3.jpg" alt="team photo">
+                <img src="img/diary.jpg" alt="team photo">
             </div>
             <div class="description">
                 <h1>STUDENT'S DIARY</h1>
@@ -291,6 +304,90 @@
             </div>
         </div>
         <!-- END CARD -->
+
+        <!-- START CARD -->
+        <div class="card" id="team1">
+            <div class="team-photo">
+                <img src="img/guid.jpg" alt="team photo">
+            </div>
+            <div class="description">
+                <h1>Polytechnic Guide</h1>
+                <div class="text">
+                    <p><b>Team:</b> Yurii Drevnytskyi</p>
+                    <p class='truncated'>It is an helpful adaptive website which help you to navigate in Polytechnic university. Its show the right way between buildings of the university,transport which u need and,the location of the main transport stops.Also you can find
+                        here the main map of location all university buildings and their photos,description,etc..</p>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+
+        <!-- START CARD -->
+        <div class="card" id="team1">
+            <div class="team-photo">
+                <img src="img/guid.jpg" alt="team photo">
+            </div>
+            <div class="description">
+                <h1>Polytechnic Guide</h1>
+                <div class="text">
+                    <p><b>Team:</b> Yurii Drevnytskyi</p>
+                    <p class='truncated'>It is an helpful adaptive website which help you to navigate in Polytechnic university. Its show the right way between buildings of the university,transport which u need and,the location of the main transport stops.Also you can find
+                        here the main map of location all university buildings and their photos,description,etc..</p>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+
+        <!-- START CARD -->
+        <div class="card" id="team1">
+            <div class="team-photo">
+                <img src="img/guid.jpg" alt="team photo">
+            </div>
+            <div class="description">
+                <h1>Polytechnic Guide</h1>
+                <div class="text">
+                    <p><b>Team:</b> Yurii Drevnytskyi</p>
+                    <p class='truncated'>It is an helpful adaptive website which help you to navigate in Polytechnic university. Its show the right way between buildings of the university,transport which u need and,the location of the main transport stops.Also you can find
+                        here the main map of location all university buildings and their photos,description,etc..</p>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+
+
+        <!-- START CARD -->
+        <div class="card" id="team1">
+            <div class="team-photo">
+                <img src="img/guid.jpg" alt="team photo">
+            </div>
+            <div class="description">
+                <h1>Polytechnic Guide</h1>
+                <div class="text">
+                    <p><b>Team:</b> Yurii Drevnytskyi</p>
+                    <p class='truncated'>It is an helpful adaptive website which help you to navigate in Polytechnic university. Its show the right way between buildings of the university,transport which u need and,the location of the main transport stops.Also you can find
+                        here the main map of location all university buildings and their photos,description,etc..</p>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+
+        <!-- START CARD -->
+        <div class="card" id="team1">
+            <div class="team-photo">
+                <img src="img/guid.jpg" alt="team photo">
+            </div>
+            <div class="description">
+                <h1>Polytechnic Guide</h1>
+                <div class="text">
+                    <p><b>Team:</b> Yurii Drevnytskyi</p>
+                    <p class='truncated'>It is an helpful adaptive website which help you to navigate in Polytechnic university. Its show the right way between buildings of the university,transport which u need and,the location of the main transport stops.Also you can find
+                        here the main map of location all university buildings and their photos,description,etc..</p>
+                </div>
+            </div>
+        </div>
+        <!-- END CARD -->
+
+
+
     </div>
 
     <footer>

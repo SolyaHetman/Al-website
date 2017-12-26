@@ -93,6 +93,14 @@ tr:nth-child(even) {
     background-color: #f1f1f1;
 }
 
+table tr td a {
+    text-decoration: none;
+}
+
+table tr td a:hover {
+    color: #fb8c00;
+}
+
 @media screen and (min-width: 480px) and (max-width: 600px) {
     .banner h1 {
         font-size: 2rem !important;
